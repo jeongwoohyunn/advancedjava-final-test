@@ -1,11 +1,7 @@
 package prob01;
 import java.util.Scanner;
-
-
 public class Gugudan {
-	
 	static int resultNumber = 0;
-	
 	public static void main( String[] args ) {
 		int l = randomize( 1, 9 );
 		int r = randomize( 1, 9 );
@@ -30,12 +26,17 @@ public class Gugudan {
 		}
 
 		System.out.print( "\n\n" );
-		System.out.print( "answer:" );
+		System.out.print( "answer:");
 
 		Scanner s = new Scanner( System.in );
-		//
-		//  이 부분에 적당한 코드를 작성합니다.  
-		//
+		int input = s.nextInt();
+		System.out.println();
+		if(input==(l*r)) {
+			System.out.println("정답");
+		}
+		else {
+			System.out.println("오답");
+		}
 	}
 
 	private static int randomize( int lNum, int rNum ) {
@@ -56,12 +57,16 @@ public class Gugudan {
 	        int random = ( int )( Math.random() * MAX_ANSWER_NUMBER ) + 1;
 	        
 	        boolean evaluted = false;
-	        for( int i = 0; i < occupied; i++ ) {
-	        	if( /* 이 부분에 적당 조건의 코드를 입력 합니다. */ ) {
-	        		evaluted = true;
-	        		break;
-	        	}
-	        }
+//	        for( int i = 0; i < occupied; i++ ) {
+//	        	if(i==Gugudan.resultNumber)
+//	        			/* 이 부분에 적당 조건의 코드를 입력 합니다. */  {
+//	        		//retrun해주는 역할 
+//	        		
+//	        		System.out.println();
+//	        		evaluted = true;
+//	        		break;
+//	        	}
+//	        }
 	        
 	        if( !evaluted ) {
 	        	boardNumbers[ occupied++ ] = random;

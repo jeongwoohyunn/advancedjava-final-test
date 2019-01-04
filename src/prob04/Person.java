@@ -24,8 +24,7 @@ public class Person {
 		this.name = name;
 	}
 	public void selfIntroduce(){
-		// "내 이름은 ...이며, 나이는 ...살입니다." 출력함
-		// 예) 내이름은 김철수이며, 나이는 19살 입니다.
+		
 	}
 
 	static int getPopulation(){

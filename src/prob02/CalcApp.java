@@ -12,6 +12,8 @@ public class CalcApp {
 		int b = scanner.nextInt();
 		String operation = scanner.next();
 		
+		//인터페이스로
 		/* operation에 따라 4칙 연산 객체를 생성하고 caculate 메서드를 호출합니다. */
+		
 	}
 }

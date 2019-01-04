@@ -13,6 +13,8 @@ public class MoneyTest {
             && ten.equals( five.multiply( two ) )
             && two.equals( ten.devide( five ) ) )  {
             System.out.println( "Money Class 구현을 완료 하였습니다." );
+            //add및 다른것들 메소드 구현 equals 오버라이드 hash도
+            //this amount랑 파라미터값이랑 생성자만들기
         }
 	}
 }
