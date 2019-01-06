@@ -31,7 +31,7 @@ public class LoginMain {
 			login(joinUsers, user);
 			System.out.println("로그인 성공");	
 		} catch (UserNotFoundException e) {
-		System.out.println("존재하지 않는 사용자입니다.");
+		System.out.println("사용자를 찾을 수 없습니다.");
 	} catch (PasswordDismatchException e) {
 		System.out.println("비밀번호가 틀렸습니다.");
 	}

@@ -14,6 +14,30 @@ public class CalcApp {
 		
 		//인터페이스로
 		/* operation에 따라 4칙 연산 객체를 생성하고 caculate 메서드를 호출합니다. */
+		Arithmetic arit = null;
+		int result = 0;
+		switch(operation) {
+		case "+":
+			arit = new Add(a,b);
+			result = arit.calculate(a,b);
+			break;
+		case "-":
+			arit = new Sub(a,b);
+			result = arit.calculate(a,b);
+			break;
+		case "*":
+			arit = new Mul(a,b);
+			result = arit.calculate(a,b);
+			break;
+		case "/":
+			arit = new Div(a,b);
+			result = arit.calculate(a,b);
+			break;
+		default:
+			System.out.println("연산기호를 +,-,*,/ 중에서 다시 입력해주세요");
+			return;
+		}
+		System.out.println(result);
 		
 	}
 }
