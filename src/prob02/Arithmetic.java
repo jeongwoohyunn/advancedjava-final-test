@@ -1,6 +1,6 @@
 package prob02;
 
 public interface Arithmetic {
-	int calculate( int a, int b );
+	int calculate(int a, int b);
 
 }

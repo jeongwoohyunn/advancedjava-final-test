@@ -13,7 +13,7 @@ public class Gugudan {
 
 		int[] answerNumbers = randomizeAnswers();
 		int loc = randomize(0, 8);
-		answerNumbers[loc] = resultNumber;
+		answerNumbers[loc] = resultNumber;//
 
 		System.out.println(l + " x " + r + " = ?");
 
@@ -58,14 +58,14 @@ public class Gugudan {
 		while (occupied < COUNT_ANSWER_NUMBER) {
 
 			int random = (int) (Math.random() * MAX_ANSWER_NUMBER) + 1;
-
 			boolean evaluted = false;
+
 			// 9개의 배열에 랜덤값을 보여줘야된다.
 			for (int i = 0; i < occupied; i++) {
 
 				if (boardNumbers[i] == random) {
 					evaluted = true;
-					
+
 				}
 			}
 
